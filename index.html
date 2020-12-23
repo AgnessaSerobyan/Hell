@@ -29,9 +29,9 @@
   }
 
   .clouds{
-    position: relative;
-    top: -3230px;
-    left: -9px;
+    position: absolute;
+    top: 730px;
+    left: 0px;
     z-index: 16;
   }
 
@@ -46,7 +46,8 @@
     top: 2396px;
     z-index: 1;
 
-  }
+   }
+
 
   .devil{
     position: relative;
@@ -58,37 +59,107 @@
   }
 
 
-  .scary { position: relative;
-    position: absolute;
-    left: 48.67%;
+
+
+  <style type="text/css">
+  .scaryAnimation {
+    position:absolute;
+    margin:0 auto;
+    height: 400px;
+    width: 400px;
+    left: -1500px;
     right: 20.15%;
     top: 6200px;
-    bottom: 55.41%;
+    display: block;
+    z-index: 120;
   }
+
+  .scaryAnimation img {
+    /* left: 0; */
+    position:absolute;
+    top: 6200px;
+    left: 600px;
+    z-index: 100;
+  }
+
+  .scaryAnimation img.scaryred {opacity:0;filter:alpha(opacity=0); z-index: 100;}
+  .scaryAnimation:hover img.scaryred {opacity:1;filter:alpha(opacity=100);z-index: 110;}
+  .scaryAnimation:hover img.scary, .scaryAnimation img.scary:hover {opacity:0;filter:alpha(opacity=0);z-index: 120;}
+
+  <style type="text/css">
+  .dogAnimation {
+    position:absolute;
+    margin:0 auto;
+    height: 400px;
+    width:400px;
+    left: -1500px;
+    right: 20.15%;
+    top: 6200px;
+    display: block;
+    z-index: 120;
+  }
+
+  .dogAnimation img {
+    left: 0;
+    position:absolute;
+    top: 6780px;
+    left: 100px;
+    z-index: 100;
+  }
+
+  .dogAnimation img.dogred {opacity:0;filter:alpha(opacity=0); z-index: 100;}
+  .dogAnimation:hover img.dogred {opacity:1;filter:alpha(opacity=100);z-index: 110;}
+  .dogAnimation:hover img.dog, .dogAnimation img.dog:hover {opacity:0;filter:alpha(opacity=0);z-index: 120;}
+
+  <style type="text/css">
+  .swordAnimation {
+    position:absolute;
+    margin:0 auto;
+    top: 2110px;
+    left: 5500;
+    right: 9000;
+    display: block;
+    z-index: 120;
+  }
+
+  .swordAnimation img {
+    left: 0;
+    position:absolute;
+    top: 4110px;
+    left: -500;
+    right: -9000;
+    z-index: 100;
+  }
+
+
+  .swordAnimation img.swordred {opacity:0;filter:alpha(opacity=0); z-index: 100;}
+  .swordAnimation:hover img.swordred {opacity:1;filter:alpha(opacity=100);z-index: 110;}
+  .swordAnimation:hover img.sword, .swordAnimation img.sword:hover {opacity:0;filter:alpha(opacity=0);z-index: 120;}
+
 
   .wall{
     position: absolute;
     z-index: 100;
     left: -2px;
     top: 11582px;
-}
+  }
     /* left: -100px;
     right: 8000px;
     top: 10000px; */
 
   .chance{
-    position: relative;
-    top: -500px;
+    position: absolute;
+    top: 0px;
     left: -360px;
   }
 
 
-  .dog{
+  /* .dog{
       position: relative;
       top: 6780px;
       left: 100px;
 
-    }
+    } */
 
   .sword{
       position: relative;
@@ -106,7 +177,7 @@
     }
 
   .death{
-    position: relative;
+    position: absolute;
     top: 6757px;
   }
 
@@ -119,10 +190,10 @@
 
   .hands{
     position: relative;
-    top: 7930px;
+    top: 7720px;
     z-index: 101;
     /* left: 570px; */
-    left: 605px;
+    left: 705px;
   }
 
   .mouses{
@@ -131,9 +202,279 @@
     top: -100px;
   }
 
+
+  p1{
+    position: absolute;
+    left: 8.51%;
+    right: 66.25%;
+    top: 2400px;
+    /* bottom: 79.42%; */
+
+    font-family: Mason Chronicles;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    /* line-height: 153px; */
+
+    color: #000000;
+
+  }
+
+   p2{
+    position: absolute;
+
+    left: 8.51%;
+    right: 68.25%;
+    top: 2500px;
+
+
+    font-family: Dodo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 70px;
+
+    color: #000000;
+  }
+
+    p3 {
+     position: absolute;
+     left: 8.51%;
+     right: 66.25%;
+     top: 3100px;
+     /* bottom: 70.82%; */
+
+     font-family: Mason Chronicles;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 90px;
+     line-height: 153px;
+
+     color: #000000;
+   }
+
+    p4{
+      position: relative;
+      left: -8px;
+      right: -1100px;
+      top: -2180px;
+
+
+      font-family: Dodo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 70px;
+
+      color: #000000;
+    }
+
+     p5 {
+      position: relative;
+      left: -110px;
+      right: 100px;
+      top: -960px;
+
+      font-family: Mason Chronicles;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 85px;
+      line-height: 153px;
+
+      color: #000000;
+    }
+
+      p6{
+        position: relative;
+        left: -480px;
+        right: 100px;
+        top: -890px;
+
+
+        font-family: Dodo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 70px;
+
+        color: #000000;
+      }
+
+      p7 {
+       position: relative;
+       left: -650px;
+       right: 100px;
+       top: 400px;
+
+       font-family: Mason Chronicles;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 85px;
+       line-height: 153px;
+
+       color: #000000;
+     }
+
+       p8{
+         position: relative;
+         left: -880px;
+         right: 100px;
+         top: 470px;
+
+
+         font-family: Dodo;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 35px;
+         line-height: 70px;
+
+         color: #000000;
+       }
+
+       p9 {
+        position: relative;
+        left: 110px;
+        right: 100px;
+        top: 1550px;
+
+        font-family: Mason Chronicles;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 85px;
+        line-height: 153px;
+
+        color: #000000;
+      }
+
+        p10{
+          position: absolute;
+          left: 125px;
+          right: 400px;
+          top: 7180px;
+
+
+          font-family: Dodo;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 35px;
+          line-height: 70px;
+
+          color: #000000;
+        }
+
+        p11 {
+         position: relative;
+         left: -140px;
+         right: 100px;
+         top: 2800px;
+
+         font-family: Mason Chronicles;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 85px;
+         line-height: 153px;
+
+         color: #000000;
+       }
+
+         p12 {
+           position: absolute;
+           left: 125px;
+           right: 400px;
+           top: 8440px;
+
+
+           font-family: Dodo;
+           font-style: normal;
+           font-weight: normal;
+           font-size: 35px;
+           line-height: 70px;
+
+           color: #000000;
+         }
+
+         p13 {
+          position: relative;
+          left: -420px;
+          right: 100px;
+          top: 3850px;
+
+          font-family: Mason Chronicles;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 85px;
+          line-height: 153px;
+
+          color: #000000;
+        }
+
+          p14 {
+            position: absolute;
+            left: 125px;
+            right: 400px;
+            top: 9490px;
+
+
+            font-family: Dodo;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 35px;
+            line-height: 70px;
+
+            color: #000000;
+          }
+
+          p15 {
+           position: relative;
+           left: 110px;
+           right: -6100px;
+           top: 4800px;
+
+           font-family: Mason Chronicles;
+           font-style: normal;
+           font-weight: 500;
+           font-size: 85px;
+           line-height: 153px;
+
+           color: #000000;
+         }
+
+           p16 {
+             position: absolute;
+             left: 125px;
+             right: 400px;
+             top: 10590px;
+
+
+             font-family: Dodo;
+             font-style: normal;
+             font-weight: normal;
+             font-size: 35px;
+             line-height: 70px;
+
+             color: #000000;
+           }
+
+
   </style>
 
   <body bgcolor="#ffffff">
+
+
+  <a class="scaryAnimation" href="#">
+    <img class="scary" src="images/1280/scary.png" alt="scary">
+    <img class="scaryred" src="images/1280/scaryred.png" alt="scaryred">
+  </a>
+
+  <a class="dogAnimation" href="#">
+    <img class="dog" src="images/1280/dog.png" alt="dog">
+    <img class="dogred" src="images/1280/dogred.png" alt="dogred">
+  </a>
+
+  <a class="swordAnimation" href="#">
+    <img class="sword" src="images/1280/sword.png" alt="sword">
+    <img class="swordred" src="images/1280/swordred.png" alt="swordred">
+  </a>
 
   <img class="background" src="images/1280/background.png" alt="background">
   <img class="falling" src="images/1280/falling.png" alt="falling">
@@ -142,14 +483,30 @@
   <img class="scary" src="images/1280/scary.png" alt="scary">
   <img class="wall" src="images/1280/wall.png" alt="wall">
   <img class="chance" src="images/1280/chance.png" alt="chance">
-  <img class="dog" src="images/1280/dog.png" alt="dog">
-  <img class="sword" src="images/1280/sword.png" alt="sword">
   <img class="dragon" src="images/1280/dragon.png" alt="dragon">
   <img class="death" src="images/1280/death.png" alt="death">
   <img class="head" src="images/1280/head.png" alt="head">
   <img class="hands" src="images/1280/hands.png" alt="hands">
   <img class="mouses" src="images/1280/mouses.png" alt="moses">
   <img class="clouds" src="images/1280/clouds.png" alt="clouds">
+
+  <p1> Limbo</p1>
+  <p2>10% gray</p2>
+  <p3> Lust </p3>
+  <p4>23% gray</p4>
+  <p5>Gluttony</p5>
+  <p6>31% gray</p6>
+  <p7>Greed</p7>
+  <p8>45% gray</p8>
+  <p9>Anger</p9>
+  <p10>63% gray</p10>
+  <p11>Heresy</p11>
+  <p12>71% gray</p12>
+  <p13>Violence</p13>
+  <p14>87% gray</p14>
+  <p15>Treachery</p15>
+  <p16>100% gray</p16>
+
 
 
 
