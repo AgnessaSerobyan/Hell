@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Mason Chronicles;
+    src: url(fonts/masonchronicles.ttf);
+   }
+
+   @font-face {
+       font-family: Dodo;
+       src: url(fonts/Dodo-Regular.ttf);
+      }
+
 .background{
   position: absolute;
   width: 1280px;
