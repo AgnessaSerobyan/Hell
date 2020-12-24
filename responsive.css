@@ -1,14 +1,4 @@
-@media all and (max-width: 1340px) {
-	.sidebar {
-		display: none;
-	}
-}
-@media all and (max-width: 1340px) {
-	.sidebar {
-		display: none;
-	}
-}
-/* <meta name="viewport" content="width=500, initial-scale=1"> */
+
 
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 article > * { width: calc(100% - 40px); }
